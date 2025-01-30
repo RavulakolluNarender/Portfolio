@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Narender Ravulakollu - Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f5f5f5;
+            color: #333;
+        }
+
+        nav {
+            background-color: #2c3e50;
+            padding: 1rem;
+            position: sticky;
+            top: 0;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            list-style: none;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        section {
+            padding: 3rem 10%;
+        }
+
+        .header {
+            text-align: center;
+            padding: 4rem 0;
+            background-color: #34495e;
+            color: white;
+        }
+
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .card {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .work-experience {
+            margin: 2rem 0;
+        }
+
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            margin-top: 1rem;
+        }
+
+        @media (max-width: 768px) {
+            section {
+                padding: 2rem 5%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#work">Work</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <header class="header">
+        <h1>Narender Ravulakollu</h1>
+        <p>Content Strategist & Digital Marketing Expert</p>
+        <p>B.Tech in Mechanical Engineering</p>
+        <p>Geethanjali College of Engineering and Technology</p>
+    </header>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <div class="card">
+            <p>Digital marketing professional with expertise in content strategy, SEO optimization, and social media management. Proven track record in creating engaging content that drives organic growth and enhances brand visibility.</p>
+        </div>
+    </section>
+
+    <section id="work">
+        <h2>Featured Work</h2>
+        <div class="project-grid">
+            <div class="card">
+                <h3>Technical Articles (AlmaBetter)</h3>
+                <ul>
+                    <li><a href="https://www.almabetter.com/bytes/articles/getting-started-with-random-variables-for-data-science" target="_blank">Random Variables in Data Science</a></li>
+                    <li><a href="https://www.almabetter.com/bytes/articles/transfer-learning-in-deep-learning" target="_blank">Transfer Learning Guide</a></li>
+                    <li><a href="https://www.almabetter.com/bytes/articles/data-science-as-a-strategic-tool-in-the-oil-and-gas-industry" target="_blank">Data Science in Oil & Gas</a></li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h3>Excel Tutorials (Be10x)</h3>
+                <ul>
+                    <li><a href="https://youtu.be/OJ3OByf11SE" target="_blank">Bing Maps Add-In</a></li>
+                    <li><a href="https://youtu.be/zUiWLq0Nm6E" target="_blank">Activity Tracker</a></li>
+                    <li><a href="https://youtu.be/aU_NZSdq44Q" target="_blank">AI-Powered Dashboard</a></li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h3>Marketing Content (Salesforge.ai)</h3>
+                <ul>
+                    <li><a href="https://www.salesforge.ai/blog/emailchaser-alternatives" target="_blank">Emailchaser Alternatives</a></li>
+                    <li><a href="https://www.salesforge.ai/blog/fiber-ai-review" target="_blank">Fiber AI Review</a></li>
+                    <li><a href="https://www.salesforge.ai/blog/clay-alternatives" target="_blank">Clay Alternatives</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>Key Projects</h2>
+        <div class="project-grid">
+            <div class="card">
+                <h3>Knee Exoskeleton Prototype</h3>
+                <p>3D-printed medical device with pneumatic actuators</p>
+                <p>Technologies: SolidWorks, ANSYS, FDM 3D Printing</p>
+            </div>
+            
+            <div class="card">
+                <h3>Environmental Awareness Campaign</h3>
+                <p>Bhumi NGO sustainability video with 50K+ views</p>
+                <p>Skills: Scriptwriting, Video Production</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <div class="card">
+            <p>📧 Email: narenderravulakollu@gmail.com</p>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/narenderravulakollu/" target="_blank" style="color: #0A66C2;">LinkedIn</a>
+                <a href="Narender_CV.pdf" target="_blank" style="color: #e74c3c;">Download CV</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2024 Narender Ravulakollu. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Dynamic year update
+        document.querySelector('footer p').innerHTML = `© ${new Date().getFullYear()} Narender Ravulakollu. All rights reserved.`;
+    </script>
+</body>
+</html>
