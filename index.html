@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Narender Ravulakollu - Portfolio</title>
     <style>
+        /* Previous CSS remains same */
         * {
             margin: 0;
             padding: 0;
@@ -85,6 +86,16 @@
                 padding: 2rem 5%;
             }
         }
+
+        /* New contact info styles */
+        .contact-info {
+            text-align: center;
+            margin: 1rem 0;
+        }
+        .contact-info a {
+            color: #2c3e50;
+            text-decoration: none;
+        }
     </style>
 </head>
 <body>
@@ -133,11 +144,21 @@
             </div>
 
             <div class="card">
-                <h3>Marketing Content (Salesforge.ai)</h3>
+                <h3>Marketing Content (Miraa.io)</h3>
                 <ul>
                     <li><a href="https://www.salesforge.ai/blog/emailchaser-alternatives" target="_blank">Emailchaser Alternatives</a></li>
                     <li><a href="https://www.salesforge.ai/blog/fiber-ai-review" target="_blank">Fiber AI Review</a></li>
                     <li><a href="https://www.salesforge.ai/blog/clay-alternatives" target="_blank">Clay Alternatives</a></li>
+                </ul>
+            </div>
+
+            <!-- New VisionIAS Section -->
+            <div class="card">
+                <h3>Social Media Content (VisionIAS)</h3>
+                <ul>
+                    <li><a href="https://www.instagram.com/share/p/_zB1lcFOP" target="_blank">Jaipur Campaign</a></li>
+                    <li><a href="https://www.instagram.com/share/p/_xq9YqGmT" target="_blank">CSAT Crash Course</a></li>
+                    <li><a href="https://www.instagram.com/share/reel/BANyjV273x" target="_blank">Hyderabad Session</a></li>
                 </ul>
             </div>
         </div>
@@ -154,7 +175,7 @@
             
             <div class="card">
                 <h3>Environmental Awareness Campaign</h3>
-                <p>Bhumi NGO sustainability video with 50K+ views</p>
+                <p>Bhumi NGO sustainability video</p>
                 <p>Skills: Scriptwriting, Video Production</p>
             </div>
         </div>
@@ -163,10 +184,13 @@
     <section id="contact">
         <h2>Contact</h2>
         <div class="card">
-            <p>📧 Email: narenderravulakollu@gmail.com</p>
+            <div class="contact-info">
+                <p>📧 <a href="mailto:narenderravulakollu@gmail.com">narenderravulakollu@gmail.com</a></p>
+                <p>📱 <a href="tel:+919618294759">+91 9618294759</a></p>
+            </div>
             <div class="social-links">
                 <a href="https://www.linkedin.com/in/narenderravulakollu/" target="_blank" style="color: #0A66C2;">LinkedIn</a>
-                <a href="https://github.com/RavulakolluNarender/Portfolio/blob/d25d58b0d9b825e4d933cda2b044e58450493923/Narender_CV.pdf" target="_blank" style="color: #e74c3c;">Download CV</a>
+                <a href="Narender_CV.pdf" target="_blank" style="color: #e74c3c;">Download CV</a>
             </div>
         </div>
     </section>
@@ -176,7 +200,7 @@
     </footer>
 
     <script>
-        // Smooth scrolling for navigation links
+        // Previous JavaScript remains same
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
@@ -186,7 +210,6 @@
             });
         });
 
-        // Dynamic year update
         document.querySelector('footer p').innerHTML = `© ${new Date().getFullYear()} Narender Ravulakollu. All rights reserved.`;
     </script>
 </body>
