@@ -1,216 +1,346 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Narender Ravulakollu - Portfolio</title>
-    <style>
-        /* Previous CSS remains same */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Narender Ravulakollu | Marketing & Content Strategist</title>
 
-        body {
-            background-color: #f5f5f5;
-            color: #333;
-        }
+<style>
+:root {
+    --primary:#0A2342;
+    --secondary:#1A73E8;
+    --light:#f7f9fc;
+    --dark:#222;
+}
 
-        nav {
-            background-color: #2c3e50;
-            padding: 1rem;
-            position: sticky;
-            top: 0;
-        }
+* {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Inter', system-ui, sans-serif;
+}
 
-        nav ul {
-            display: flex;
-            justify-content: center;
-            gap: 2rem;
-            list-style: none;
-        }
+body {
+    background:var(--light);
+    color:var(--dark);
+    line-height:1.6;
+}
 
-        nav a {
-            color: white;
-            text-decoration: none;
-            font-weight: 500;
-        }
+/* NAV */
+nav {
+    position:sticky;
+    top:0;
+    background:#fff;
+    box-shadow:0 2px 10px rgba(0,0,0,.05);
+    z-index:10;
+}
+nav ul {
+    display:flex;
+    justify-content:center;
+    gap:2rem;
+    list-style:none;
+    padding:1rem;
+}
+nav a {
+    text-decoration:none;
+    color:var(--primary);
+    font-weight:600;
+}
 
-        section {
-            padding: 3rem 10%;
-        }
+/* HERO */
+header {
+    background:linear-gradient(135deg,#0A2342,#1A73E8);
+    color:#fff;
+    text-align:center;
+    padding:5rem 10%;
+}
+header h1 {
+    font-size:3rem;
+    margin-bottom:.5rem;
+}
+header p {
+    opacity:.95;
+}
+.hero-cta {
+    margin-top:2rem;
+}
+.hero-cta a {
+    display:inline-block;
+    margin:.5rem;
+    padding:.8rem 1.6rem;
+    border-radius:30px;
+    text-decoration:none;
+    font-weight:600;
+}
+.btn-primary {
+    background:#fff;
+    color:var(--primary);
+}
+.btn-outline {
+    border:2px solid #fff;
+    color:#fff;
+}
 
-        .header {
-            text-align: center;
-            padding: 4rem 0;
-            background-color: #34495e;
-            color: white;
-        }
+/* SECTION */
+section {
+    padding:4rem 10%;
+}
+h2 {
+    text-align:center;
+    margin-bottom:2rem;
+    font-size:2rem;
+}
 
-        .project-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-            margin-top: 2rem;
-        }
+/* CARDS */
+.grid {
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:2rem;
+}
+.card {
+    background:#fff;
+    padding:2rem;
+    border-radius:12px;
+    box-shadow:0 8px 25px rgba(0,0,0,.06);
+}
+.card h3 {
+    margin-bottom:.5rem;
+}
 
-        .card {
-            background: white;
-            padding: 1.5rem;
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        }
+/* HIGHLIGHTS */
+.highlights {
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    gap:1.5rem;
+    text-align:center;
+}
+.highlight {
+    background:#fff;
+    padding:1.5rem;
+    border-radius:12px;
+    box-shadow:0 8px 25px rgba(0,0,0,.06);
+}
+.highlight h3 {
+    font-size:2rem;
+    color:var(--secondary);
+}
 
-        .work-experience {
-            margin: 2rem 0;
-        }
+/* LINKS */
+.card a {
+    color:var(--secondary);
+    text-decoration:none;
+}
 
-        footer {
-            background-color: #2c3e50;
-            color: white;
-            text-align: center;
-            padding: 2rem;
-        }
+/* CONTACT */
+.contact-info {
+    text-align:center;
+}
+.social-links {
+    display:flex;
+    justify-content:center;
+    gap:1.5rem;
+    margin-top:1rem;
+}
 
-        .social-links {
-            display: flex;
-            gap: 1rem;
-            justify-content: center;
-            margin-top: 1rem;
-        }
+/* FOOTER */
+footer {
+    background:#0A2342;
+    color:#fff;
+    text-align:center;
+    padding:2rem;
+    margin-top:3rem;
+}
 
-        @media (max-width: 768px) {
-            section {
-                padding: 2rem 5%;
-            }
-        }
-
-        /* New contact info styles */
-        .contact-info {
-            text-align: center;
-            margin: 1rem 0;
-        }
-        .contact-info a {
-            color: #2c3e50;
-            text-decoration: none;
-        }
-    </style>
+@media(max-width:768px){
+    header h1 {font-size:2.2rem;}
+    section {padding:3rem 6%;}
+}
+</style>
 </head>
+
 <body>
-    <nav>
-        <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#work">Work</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
 
-    <header class="header">
-        <h1>Narender Ravulakollu</h1>
-        <p>Content Strategist & Digital Marketing Expert</p>
-        <p>B.Tech in Mechanical Engineering</p>
-        <p>Geethanjali College of Engineering and Technology</p>
-    </header>
+<nav>
+<ul>
+<li><a href="#about">About</a></li>
+<li><a href="#work">Work</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <div class="card">
-            <p>Digital marketing professional with expertise in content strategy, SEO optimization, and social media management. Proven track record in creating engaging content that drives organic growth and enhances brand visibility.</p>
-        </div>
-    </section>
+<header>
+<h1>Narender Ravulakollu</h1>
+<p>Marketing Executive | Content Strategist | Brand Storyteller</p>
+<p>3.25+ Years | Bengaluru</p>
 
-    <section id="work">
-        <h2>Featured Work</h2>
-        <div class="project-grid">
-            <div class="card">
-                <h3>Technical Articles (AlmaBetter)</h3>
-                <ul>
-                    <li><a href="https://www.almabetter.com/bytes/articles/getting-started-with-random-variables-for-data-science" target="_blank">Random Variables in Data Science</a></li>
-                    <li><a href="https://www.almabetter.com/bytes/articles/transfer-learning-in-deep-learning" target="_blank">Transfer Learning Guide</a></li>
-                    <li><a href="https://www.almabetter.com/bytes/articles/data-science-as-a-strategic-tool-in-the-oil-and-gas-industry" target="_blank">Data Science in Oil & Gas</a></li>
-                </ul>
-            </div>
+<div class="hero-cta">
+<a href="#contact" class="btn-primary">Hire Me</a>
+<a href="Narender_CV.pdf" target="_blank" class="btn-outline">Download CV</a>
+</div>
+</header>
 
-            <div class="card">
-                <h3>Excel Tutorials (Be10x)</h3>
-                <ul>
-                    <li><a href="https://youtu.be/OJ3OByf11SE" target="_blank">Bing Maps Add-In</a></li>
-                    <li><a href="https://youtu.be/zUiWLq0Nm6E" target="_blank">Activity Tracker</a></li>
-                    <li><a href="https://youtu.be/aU_NZSdq44Q" target="_blank">AI-Powered Dashboard</a></li>
-                </ul>
-            </div>
+<section id="about">
+<h2>About Me</h2>
+<div class="card">
+<p>
+I’m a results-driven marketing and content professional with 3+ years of experience
+building brands through content, social media, SEO, and storytelling.
+I specialize in translating complex ideas into clear, high-impact communication
+that drives engagement, growth, and trust.
+</p>
+</div>
+</section>
 
-            <div class="card">
-                <h3>Marketing Content (Miraa.io)</h3>
-                <ul>
-                    <li><a href="https://www.salesforge.ai/blog/emailchaser-alternatives" target="_blank">Emailchaser Alternatives</a></li>
-                    <li><a href="https://www.salesforge.ai/blog/fiber-ai-review" target="_blank">Fiber AI Review</a></li>
-                    <li><a href="https://www.salesforge.ai/blog/clay-alternatives" target="_blank">Clay Alternatives</a></li>
-                </ul>
-            </div>
+<section>
+<div class="highlights">
+<div class="highlight">
+<h3>20K+</h3>
+<p>LinkedIn Followers Grown</p>
+</div>
+<div class="highlight">
+<h3>40+</h3>
+<p>SEO Articles (1st Page)</p>
+</div>
+<div class="highlight">
+<h3>70+</h3>
+<p>Professional Video Tutorials</p>
+</div>
+<div class="highlight">
+<h3>3.25</h3>
+<p>Years Experience</p>
+</div>
+</div>
+</section>
 
-            <!-- New VisionIAS Section -->
-            <div class="card">
-                <h3>Social Media Content (VisionIAS)</h3>
-                <ul>
-                    <li><a href="https://www.instagram.com/share/p/_zB1lcFOP" target="_blank">Jaipur Campaign</a></li>
-                    <li><a href="https://www.instagram.com/share/p/_xq9YqGmT" target="_blank">CSAT Crash Course</a></li>
-                    <li><a href="https://www.instagram.com/share/reel/BANyjV273x" target="_blank">Hyderabad Session</a></li>
-                </ul>
-            </div>
-        </div>
-    </section>
+<section id="work">
+<h2>Featured Work</h2>
 
-    <section id="projects">
-        <h2>Key Projects</h2>
-        <div class="project-grid">
-            <div class="card">
-                <h3>Knee Exoskeleton Prototype</h3>
-                <p>3D-printed medical device with pneumatic actuators</p>
-                <p>Technologies: SolidWorks, ANSYS, FDM 3D Printing</p>
-            </div>
-            
-            <div class="card">
-                <h3>Environmental Awareness Campaign</h3>
-                <p>Bhumi NGO sustainability video</p>
-                <p>Skills: Scriptwriting, Video Production</p>
-            </div>
-        </div>
-    </section>
+<div class="grid">
 
-    <section id="contact">
-        <h2>Contact</h2>
-        <div class="card">
-            <div class="contact-info">
-                <p>📧 <a href="mailto:narenderravulakollu@gmail.com">narenderravulakollu@gmail.com</a></p>
-                <p>📱 <a href="tel:+919618294759">+91 9618294759</a></p>
-            </div>
-            <div class="social-links">
-                <a href="https://www.linkedin.com/in/narenderravulakollu/" target="_blank" style="color: #0A66C2;">LinkedIn</a>
-                <a href="Narender_CV.pdf" target="_blank" style="color: #e74c3c;">Download CV</a>
-            </div>
-        </div>
-    </section>
+<!-- Miraa.io -->
+<div class="card">
+<h3>Miraa.io (Client: Salesforge.ai)</h3>
+<p>Product Marketing Articles</p>
+<ul>
+<li><a href="https://www.salesforge.ai/blog/emailchaser-alternatives" target="_blank">
+5 Tested Emailchaser Alternatives for Better Email Outreach (2024)</a></li>
 
-    <footer>
-        <p>© 2024 Narender Ravulakollu. All rights reserved.</p>
-    </footer>
+<li><a href="https://www.salesforge.ai/blog/fiber-ai-review" target="_blank">
+Fiber AI: Review, Pricing and Alternatives (2025)</a></li>
 
-    <script>
-        // Previous JavaScript remains same
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
-        });
+<li><a href="https://www.salesforge.ai/blog/emailchaser-review" target="_blank">
+Emailchaser Review: Is It Effective for Cold Outreach?</a></li>
 
-        document.querySelector('footer p').innerHTML = `© ${new Date().getFullYear()} Narender Ravulakollu. All rights reserved.`;
-    </script>
+<li><a href="https://www.salesforge.ai/blog/mailreach-alternatives" target="_blank">
+5 Tested MailReach Alternatives for Email Deliverability</a></li>
+
+<li><a href="https://www.salesforge.ai/blog/clay-alternatives" target="_blank">
+7 Best Clay Alternatives for Automated Outreach</a></li>
+</ul>
+</div>
+
+<!-- Be10x -->
+<div class="card">
+<h3>Be10x</h3>
+<p>Advanced Excel & Automation Tutorials</p>
+<ul>
+<li><a href="https://youtu.be/OJ3OByf11SE?si=6aqPBe7C4lxOfM-S" target="_blank">
+Bing Maps Add-In: Boost Productivity in Excel</a></li>
+
+<li><a href="https://youtu.be/zUiWLq0Nm6E?si=FXOLCr1il9kUXa3s" target="_blank">
+Daily Activity Tracker in Excel</a></li>
+
+<li><a href="https://youtu.be/G8Pnm3l6aWs?si=8Bf9n99BJYD8viyv" target="_blank">
+Excel Conditional Logic (AND, IF, NOT, OR)</a></li>
+
+<li><a href="https://youtu.be/dpLvVyP4kXY?si=Eci6lUasIeRkY4ZQ" target="_blank">
+Date & Time Functions in Excel</a></li>
+
+<li><a href="https://youtu.be/aU_NZSdq44Q?si=-rXJcKN6_X9pjLRD" target="_blank">
+AI-Powered Excel Dashboard</a></li>
+</ul>
+</div>
+
+<!-- AlmaBetter -->
+<div class="card">
+<h3>AlmaBetter</h3>
+<p>Technical Articles</p>
+<ul>
+<li><a href="https://www.almabetter.com/bytes/articles/getting-started-with-random-variables-for-data-science" target="_blank">
+Getting Started with Random Variables for Data Science</a></li>
+
+<li><a href="https://www.almabetter.com/bytes/articles/transfer-learning-in-deep-learning" target="_blank">
+Transfer Learning in Deep Learning: Techniques & Models</a></li>
+
+<li><a href="https://www.almabetter.com/bytes/articles/data-science-as-a-strategic-tool-in-the-oil-and-gas-industry" target="_blank">
+Data Science as a Strategic Tool in the Oil & Gas Industry</a></li>
+
+<li><a href="https://www.almabetter.com/bytes/articles/3-best-ways-to-handle-right-skewed-data" target="_blank">
+3 Best Ways to Handle Right-Skewed Data</a></li>
+
+<li><a href="https://www.almabetter.com/bytes/articles/netflix-churn-prediction-case-study" target="_blank">
+Netflix Churn Rate Prediction – Case Study (2024)</a></li>
+</ul>
+</div>
+
+</div>
+</section>
+
+
+<section id="projects">
+<h2>Key Projects</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>Knee Exoskeleton Prototype</h3>
+<p>
+Designed and fabricated a functional knee exoskeleton using 3D printing
+and pneumatic actuation, focusing on mobility assistance and ergonomic design.
+</p>
+<p><strong>Tools:</strong> SolidWorks, ANSYS, FDM 3D Printing</p>
+</div>
+
+<div class="card">
+<h3>Environmental Awareness Media Campaign</h3>
+<p>
+Conceptualized and produced a sustainability awareness video for Bhumi NGO,
+driving engagement and awareness through storytelling and visual communication.
+</p>
+<p><strong>Skills:</strong> Scriptwriting, Video Production, Creative Direction</p>
+</div>
+
+</div>
+</section>
+
+
+<section id="contact">
+<h2>Contact</h2>
+<div class="card contact-info">
+<p>📧 <a href="mailto:narenderravulakollu@gmail.com">narenderravulakollu@gmail.com</a></p>
+<p>📱 <a href="tel:+919618294759">+91 9618294759</a></p>
+
+<div class="social-links">
+<a href="https://www.linkedin.com/in/narenderravulakollu/" target="_blank">LinkedIn</a>
+<a href="Narender_CV.pdf" target="_blank">Resume</a>
+</div>
+</div>
+</section>
+
+<footer>
+<p>© <span id="year"></span> Narender Ravulakollu. All rights reserved.</p>
+</footer>
+
+<script>
+document.getElementById("year").innerText = new Date().getFullYear();
+document.querySelectorAll('a[href^="#"]').forEach(link=>{
+link.addEventListener('click',e=>{
+e.preventDefault();
+document.querySelector(link.getAttribute('href')).scrollIntoView({behavior:'smooth'});
+});
+});
+</script>
+
 </body>
 </html>
